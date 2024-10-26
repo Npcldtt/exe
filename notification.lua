@@ -8,7 +8,7 @@ local tweenInfo = TweenInfo.new(
 )
 
 function notif.Notify(player, title, text)
-	script["Alert Notification"]:Play()
+	player.PlayerGui.EXE["Alert Notification"]:Play()
 	local notification = player.PlayerGui.EXE.NotificationFrame
 	notification.Visible = true
 	notification.Title.TextTransparency = 0
