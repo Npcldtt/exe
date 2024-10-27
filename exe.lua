@@ -4,7 +4,7 @@ local EXE = Instance.new("ScreenGui")
 EXE.ResetOnSpawn = false
 EXE.Name = "EXE"
 EXE.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-EXE.Parent = game.StarterGui
+EXE.Parent = game.Players.LocalPlayer.PlayerGui
 
 local TopBar = Instance.new("Frame")
 TopBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
