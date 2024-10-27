@@ -118,7 +118,7 @@ TextBox.MultiLine = true
 TextBox.FontFace = Font.new("rbxasset://fonts/families/RobotoMono.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.Text = 'local notif = require("raw.githubusercontent.com/Npcldtt/exe/refs/heads/main/notification.lua")\nnotif.Notify(game.Players.LocalPlayer, "Hey", "Hi :D!")'
+TextBox.Text = 'local notif = require(game:HttpGet("https://raw.githubusercontent.com/Npcldtt/exe/refs/heads/main/notification.lua"))\nnotif.Notify(game.Players.LocalPlayer, "Hey", "Hi :D!")'
 TextBox.Size = UDim2.new(0, 445, 0, 254)
 TextBox.Position = UDim2.new(-0.01826483942568302, 0, 0, 0)
 TextBox.BorderSizePixel = 0
@@ -145,7 +145,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ImageButton.Parent = Code
 
-local loadstring = require("https://raw.githubusercontent.com/Npcldtt/exe/refs/heads/main/loadstring.lua");script.Parent.MouseButton1Click:Connect(function()
+local loadstring = require(game:HttpGet("https://raw.githubusercontent.com/Npcldtt/exe/refs/heads/main/loadstring.lua"));script.Parent.MouseButton1Click:Connect(function()
 	loadstring(TextBox.Text)();end)
 
 local Alert_Notification = Instance.new("Sound")
